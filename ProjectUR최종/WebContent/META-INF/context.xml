@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Context>
+  <Resource 
+    name="jdbc/itwillbs14"
+    auth="Container"
+    type="javax.sql.DataSource"
+    driverClassName="com.mysql.jdbc.Driver"
+    url="jdbc:mysql://localhost:3306/itwillbs14"
+    username="itwillbs14"
+    password="itwillbs8030909"
+  />
+
+</Context>
+
+
+
+
+
+

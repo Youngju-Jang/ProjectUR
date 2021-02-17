@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Team1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+	<!-- 멤버 -->
+	<servlet>
+     	<servlet-name>MemberController</servlet-name>
+     	<servlet-class>net.member.action.MemberController</servlet-class>  
+  	</servlet>
+  
+  	<servlet-mapping>
+     	<servlet-name>MemberController</servlet-name>
+     	<url-pattern>*.me</url-pattern>
+  	</servlet-mapping>
+	<!-- 멤버 -->
+
+	<!-- 상품등록 -->
+	<servlet>
+		<servlet-name>AdminProductFrontController</servlet-name>
+		<servlet-class>net.admin.action.AdminProductFrontController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AdminProductFrontController</servlet-name>
+		<url-pattern>*.ap</url-pattern>
+	</servlet-mapping>
+	<!-- 상품 등록 -->
+
+	<!-- 관리자 상품 리스트 -->
+	<servlet>
+		<servlet-name>AdminOrderFrontController</servlet-name>
+		<servlet-class>net.admin.action.AdminOrderFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminOrderFrontController</servlet-name>
+		<url-pattern>*.ao</url-pattern>
+	</servlet-mapping>
+	<!-- 관리자 상품 리스트 -->
+	
+	<!--product  -->
+	<servlet>
+		<servlet-name>ProductFrontController</servlet-name>
+	    <servlet-class>net.product.action.ProductFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductFrontController</servlet-name>
+		<url-pattern>*.p</url-pattern>
+	</servlet-mapping>
+	<!--product  -->
+	
+	<!-- order -->
+	<servlet>
+		<servlet-name>OrderFrontController</servlet-name>
+	    <servlet-class>net.order.action.OrderFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OrderFrontController</servlet-name>
+		<url-pattern>*.or</url-pattern>
+	</servlet-mapping>
+	<!-- order -->
+	
+	<!-- cart -->
+	<servlet>
+		<servlet-name>CartFrontController</servlet-name>
+	    <servlet-class>net.cart.action.CartFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CartFrontController</servlet-name>
+		<url-pattern>*.ba</url-pattern>
+	</servlet-mapping>
+	<!-- cart -->
+
+
+
+</web-app>
+
