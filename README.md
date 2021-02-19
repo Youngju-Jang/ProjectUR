@@ -25,4 +25,4 @@ itwillbs14.cafe24.com/ProjectUR
   - 중복상품 구매수량 수정
   - 장바구니 목록삭제
   - 상품주문
-<img src="C:\Users\joj10\OneDrive\바탕 화면">
+![projectUR](https://user-images.githubusercontent.com/77484084/108481161-2d661080-72db-11eb-8e6d-ecb8a1b57d0a.gif)
